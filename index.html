@@ -76,7 +76,6 @@
                                 </div>
                                 <div class="item2">
                                     <h5>Time zone</h5>
-                                    <p>UTC+3 (MSK)</p>
                                     <p id="clock"></p>
                                 </div>
                             </div>
@@ -157,31 +156,47 @@
     
     <footer id="footer">
         <div>
-            <button onclick="flag">About flag</button>
-                <p id="flag"></p>
-            <img src="flag-of-kalmykia.svg.png">
-            <p>© 2022 Kalmyk Republic.</p> 
             <p><a href="https://goo.gl/maps/9Syo7oVjJVkSZCUbA" target="_blank"><img src="location-two.png" class="local"></a>46°34′N 45°19′E</p>
+            <p>© 2022 Kalmyk Republic.</p> 
             <p><a target="_blank" href="https://en.wikipedia.org/wiki/Kalmykia">View more</a></p>
+            
+            <p id="flag"onclick="myFunction()"><img src="flag-of-kalmykia.svg.png"></p>
+            <p id="flag-description" onclick="myFunction()">The white flower is the symbol of the Buddha, the precious pearl of the lotus. Yellow canvas - a symbol of the sun and the Buddhist direction - Lamaism. Blue circle - heavenly surface, indestructibility, eternity. 9 flower petals - 5 continents (5 upper petals) and 4 cardinal points (4 lower petals).</p>           
         </div>
     </footer>
  </body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
     
         <script type="text/javascript">
-        function clock(){
+        let clock = document.querySelector("#clock")    
+        clock.innerHTML = moment().utcOffset(180);
+        </script>
+    
+        <script>
+        function myFunction() {
+            let flag=document.getElementById("flag");
+            let flagDescription = document.getElementById("flag-description")
+            
+            if(flag.style.display == "block"){
+                flag.style.display = "none";
+                flagDescription.style.display = "block";}
+            else{
+                flag.style.display = "block";
+                flagDescription.style.display = "none";
+            }
+            }
+        </script>
+
+</html>
+<!--
+function clock(){
          var date = new Date(),
-         hours = (date.getHours() < 10) ? '0' + date.getHours() : date.getHours(),
+         hours = (date.getHours() < 10) ? '0' + date.getHours() : date.getHours(),S
          minutes = (date.getMinutes() < 10) ? '0' + date.getMinutes() : date.getMinutes(),
          seconds = (date.getSeconds() < 10) ? '0' + date.getSeconds() : date.getSeconds();
         document.getElementById('clock').innerHTML = hours + ':' + minutes + ':' + seconds;
         }
         setInterval(clock, 1000);
         clock();
-    </script>
-    <script>
-        function myFunction() {
-         document.getElementById("flag").innerHTML = "The white flower is the symbol of the Buddha, the precious pearl of the lotus. Yellow canvas - a symbol of the sun and the Buddhist direction - Lamaism. Blue circle - heavenly surface, indestructibility, eternity. 9 flower petals - 5 continents (5 upper petals) and 4 cardinal points (4 lower petals).";
-         }
-    </script>
-
-</html>
+-->
