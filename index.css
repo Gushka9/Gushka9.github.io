@@ -18,7 +18,8 @@ h1, h2, h3, h4, h5, h6
     padding-top: 36px;
     
 }
-nav{
+
+.nav-pc{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,7 +31,7 @@ nav{
     font-family: 'Asap', sans-serif;
     z-index: 1;
 }
-nav a{
+.nav-pc a{
     text-decoration: none;
     color: rgba(36, 50, 59, 1);
     text-align: center;
@@ -38,24 +39,27 @@ nav a{
     padding: 10px;
     background-color: rgba(129, 215, 247, 0.660);
     border: 1px solid rgba(36, 50, 59, 0);
-    border-radius: 6%;
+    border-radius: 10%;
 }
 
-nav a h5{
+.nav-pc a h5{
     margin: 0;
     font-size: 15px;
 }
-nav a h5:after{
+.nav-pc a h5:after{
     border-bottom: 2px solid rgba(36, 50, 59, 1);
     transition: transform 0.5s ease-out;
     display: block;
     content: '';
     transform: scaleX(0);    
 }
-nav a:hover h5:after{
+.nav-pc a:hover h5:after{
     transform: scaleX(1);
 }
 
+.nav-mobile{
+    display:none;
+}
 
 /*text on main banner*/
 .welcome{
@@ -78,14 +82,36 @@ nav a:hover h5:after{
     margin-left: 1%;
     margin-top: 2%;
 }
-.container-main img{
+.container-main .emblem{
     width: 8%;
     border-radius: 55%;
     margin-left: 11%;
     margin-top: 5%;
-    border: 2px solid darkblue;
-    
+    border: 2px solid darkblue;   
 }
+div img.flag-main{
+    display: block;
+    margin-left: 8.5%;
+    border-radius: 2%;
+
+}
+div img.flag-main:hover{
+    transform: scale(1.1);
+    transition: 1s;    
+    box-shadow: 0px 0px 10px rgba(247, 240, 22, 1);
+}
+
+div#flag-description{
+    display:none;
+    float: left;
+    padding: 0;
+    width: 30%;
+    font-size: 0.8rem;
+    margin-left: 1%;
+    color: white;
+    font-size: 1rem;
+}
+
 
 /*Section 1 Summary*/
 
@@ -120,7 +146,7 @@ nav a:hover h5:after{
     margin-top: 60px;
     width: 15%;
 }
-/*Beetween*/
+/*Beetween section1 and section2*/
 .scroll{
     width: 100%;
 }
@@ -261,15 +287,10 @@ img.scroll{
     text-align: center;
 }
 .front img{
-    width: 290px;
+    width: 100%;
     height: 200px;
     border-radius: 10%;
 }
-
-
-/*Mobil*/
-
-
 
 /*Footer*/
 
@@ -283,44 +304,88 @@ footer{
     color: white;
 }
 footer div{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+}
+footer p{
+    width: 30%;
+    text-align: center;
 }
 footer a{
     text-decoration: none;
     color: yellow;
 }
-
 footer img.local{
-    width: 2%;
-    float: left;
-    margin-top: -1px;
+    width: 7%;
     border-radius: 50%;
-
 }
 img.local:hover{
     transform: scale(1.025);
-    transition: 1s;    
+    transition: 0.5s;    
     box-shadow: 0px 0px 10px rgba(255, 100, 100, 1);
 }
-footer img{
-    display: block;
-    float: right;
-    border-radius: 2%;
-    margin-top: -10%;
-}
-footer img:hover{
-    transform: scale(1.025);
-    transition: 1s;    
-    box-shadow: 0px 0px 10px rgba(247, 240, 22, 1);
-}
 
-footer p#flag-description{
-    display:none;
-    float: right;
-    padding: 0;
-    width: 30%;
-    margin-top: -13%;
-    margin-bottom: 0;
+
+/*Mobil*/
+@media screen and (max-width: 1024px) {
+    .container-main{
+        width:980px;
+        height: 500px;
+    }
+    .nav-pc{
+        display: none;
+    }
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3px;
+        position: fixed;
+        top: 20px;
+        right: 5px;
+        font-family: 'Asap', sans-serif;
+        z-index: 1;
+        width: 8%;
+    }
+    .nav-mobile a{
+        background-color: rgba(129, 215, 247, 0.660);
+    }
+    .nav-mobile img{
+        border-radius: 50%;
+        width: 100%;
+    }
+    div.row2 .item1,
+    div.row2 .item2{
+        width: 7rem;
+        height: 9rem;
+    }
+  
+    footer p#flag-description{
+        margin-top: -16%;
+    }
+    .column{
+        width: 50%;
+    }
+    .front img{
+        height: 40%;
+    }
+    .back p{
+        font-size: 0.7rem;
+    }
+    .container1{
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
+    .container1 .location, 
+    .container1 .climate, 
+    .container1 .flora{
+        width: 100%;
+        margin:auto;
+    } 
+    div.fakt{
+        
+    }
 }
