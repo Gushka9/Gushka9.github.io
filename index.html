@@ -1,180 +1,222 @@
 <!DOCTYPE html>
 <html>
-    
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Kalmyk Republic</title>
-        <meta name="description" content="About Kalmyk Republic">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="mediascreen.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
-    </head>
-    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kalmyk Republic</title>
+    <meta name="description" content="About Kalmyk Republic">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediascreen.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+</head>
 <!--Header-->
-        <header id="home">
-            <div class="container-main">
-                <img src="emblema.png" class="emblem">
-                <nav class="nav-pc">
-                    <a href="#home"><h5>Home</h5></a>
-                    <a href="#summary"><h5>Summary</h5></a>
-                    <a href="#history"><h5>History</h5></a>
-                    <a href="#photos"><h5>Photos</h5></a>
-                    <a href="#footer"><h5>Contact</h5></a>
-                </nav>
-                <nav class="nav-mobile">
-                    <a href="#home"><img src="home-one.jpg"></a>
-                    <a href="#summary"><img src="summary-one.jpg"></a>
-                    <a href="#history"><img src="history-one.jpg"></a>
-                    <a href="#photos"><img src="gallery-one.jpg"></a>
-                    <a href="#footer"><img src="contact-one.jpg"></a>
-                </nav>
+<header id="home">
+    <div class="container-main">
+        <img src="emblema.png" class="emblem">
+        <nav class="nav-pc">
+            <a href="#home">
+                <h5>Home</h5>
+            </a>
+            <a href="#summary">
+                <h5>Summary</h5>
+            </a>
+            <a href="#history">
+                <h5>History</h5>
+            </a>
+            <a href="#photos">
+                <h5>Photos</h5>
+            </a>
+            <a href="#footer">
+                <h5>Contact</h5>
+            </a>
+        </nav>
+        <nav class="nav-mobile">
+            <a href="#home"><img src="home-one.jpg"></a>
+            <a href="#summary"><img src="summary-one.jpg"></a>
+            <a href="#history"><img src="history-one.jpg"></a>
+            <a href="#photos"><img src="gallery-one.jpg"></a>
+            <a href="#footer"><img src="contact-one.jpg"></a>
+        </nav>
 
-                <div class="container">
-                    <div class="welcome">
-                        <h1>Welcome to Kalmykia</h1>
-                        <p>The republic covers an area of 76,100 square kilometres<br>
-                           with a small population of roughly 300,000 residents.</p> 
-                    </div>
-                <div id="flag"onclick="myFunction()"><img src="flag-of-kalmykia.svg.png" class="flag-main"></div>
-                <div id="flag-description" onclick="myFunction()">The white flower is the symbol of the Buddha, the precious pearl of the lotus. Yellow canvas - a symbol of the sun and the Buddhist direction - Lamaism. Blue circle - heavenly surface, indestructibility, eternity. 9 flower petals - 5 continents (5 upper petals) and 4 cardinal points (4 lower petals).</div>  
-                </div> 
+        <div class="container">
+            <div class="welcome">
+                <h1>Welcome to Kalmykia</h1>
+                <p>The republic covers an area of 76,100 square kilometres<br>
+                    with a small population of roughly 300,000 residents.</p>
             </div>
-        </header>
-    
-<!--Section1 Summary-->  
+            <div id="flag" onclick="flagDescription()"><img src="flag-of-kalmykia.svg.png" class="flag-main"></div>
+            <div id="flag-description" onclick="flagDescription()">The white flower is the symbol of the Buddha, the precious pearl of the lotus. Yellow canvas - a symbol of the sun and the Buddhist direction - Lamaism. Blue circle - heavenly surface, indestructibility, eternity. 9 flower petals - 5 continents (5 upper petals) and 4 cardinal points (4 lower petals).</div>
+        </div>
+    </div>
+</header>
+
+<!--Section1 Summary-->
+
 <body>
     <section id="summary">
-            <div class="container1">    
-                <div class="location">
-                        <img src="location.png">
-                        <h4>Location</h4>
-                        <p>The republic is located in Southern Russia, lying north of the North Caucasus. A small stretch of the Volga River flows through eastern Kalmykia. Other major rivers include the Yegorlyk, the Kuma, and the Manych. Lake Manych-Gudilo is the largest lake; other lakes of significance include Lakes Sarpa and Tsagan-Khak. The highest point of Kalmykia is 222 metres (728 ft) high Shared, located in the Yergeni hills.</p>
-                    </div>
-                    <div class="climate"> 
-                        <img src="climate.png">
-                        <h4>Climate</h4>
-                        <p>The average January temperature is −5 °C (23 °F) and the average July temperature is 24 °C (75 °F). Average annual precipitation ranges from 170 millimeters (6.7 in) in the east of the republic to 400 millimeters (16 in) in the west. The small town of Utta is the hottest place in Russia. On July 12, 2010, during a significant heatwave affecting all of Russia, an all-time record-high temperature was observed at 45.4 °C (113.7 °F).</p>
-                    </div>
-                    <div class="flora">
-                        <img src="flora.png">
-                        <h4>Flora and Fauna</h4>
-                        <p>Kalmykia's natural resources include coal,oil,and natural gas.The republic's wildlife includes the saiga antelope,whose habitat is protected in Chyornye Zemli Nature Reserve. Geological and geographic characteristics: tectonics and stratigraphy,the influence of relief,meandering processes,wells and springs,river and lake shorelines,reservoirs and canals,tailings,origin of desertification foci, climate. </p>
-                    </div>   
-                </div>
-        </section>
+        <div class="container1">
+            <div class="location">
+                <img src="location.png">
+                <h4>Location</h4>
+                <p>The republic is located in Southern Russia, lying north of the North Caucasus. A small stretch of the Volga River flows through eastern Kalmykia. Other major rivers include the Yegorlyk, the Kuma, and the Manych. Lake Manych-Gudilo is the largest lake; other lakes of significance include Lakes Sarpa and Tsagan-Khak. The highest point of Kalmykia is 222 metres (728 ft) high Shared, located in the Yergeni hills.</p>
+            </div>
+            <div class="climate">
+                <img src="climate.png">
+                <h4>Climate</h4>
+                <p>The average January temperature is −5 °C (23 °F) and the average July temperature is 24 °C (75 °F). Average annual precipitation ranges from 170 millimeters (6.7 in) in the east of the republic to 400 millimeters (16 in) in the west. The small town of Utta is the hottest place in Russia. On July 12, 2010, during a significant heatwave affecting all of Russia, an all-time record-high temperature was observed at 45.4 °C (113.7 °F).</p>
+            </div>
+            <div class="flora">
+                <img src="flora.png">
+                <h4>Flora and Fauna</h4>
+                <p>Kalmykia's natural resources include coal,oil,and natural gas.The republic's wildlife includes the saiga antelope,whose habitat is protected in Chyornye Zemli Nature Reserve. Geological and geographic characteristics: tectonics and stratigraphy,the influence of relief,meandering processes,wells and springs,river and lake shorelines,reservoirs and canals,tailings,origin of desertification foci, climate. </p>
+            </div>
+        </div>
+    </section>
 
-<!--Beetween-->
+    <!--Beetween-->
     <div>
-       <marquee behavior="scroll" direction="right"><img src="lotos-four.png" class="scroll"></marquee>
-   </div>
-    
-<!--Section2 Hystory-->
+        <marquee behavior="scroll" direction="right"><img src="lotos-four.png" class="scroll"></marquee>
+    </div>
+
+    <!--Section2 Hystory-->
     <section id="history">
-            <div class="container2">
-                        <div class="fakt">
-                            <div class="row1">
-                                    <h3>Hystory of Kalmykia</h3>
-                                    <p>The territory of Kalmykia is unique in that it has been the home in successive periods to many major world religions and ideologies. Some of the first people to invade this territory were Scythians, Sarmatians. Prehistoric paganism and shamanism gave way to Judaism amongst some of the Khazars (who included Muslims and Christians in equal or greater numbers as well). This was succeeded by Islam with the Alans while the Mongol hordes brought Tengriism, and the later Nogais were Muslims, before their replacement by the present-day Buddhist Oirats/Kalmyks. With the annexation of the territory by the Russian Empire, Christianity arrived with Slavic settlers, before all religion was suppressed after the Russian Revolution. Shamanism has in all probability remained a constant, often hidden, the substrate of folk practice, as it is today.</p>
-                            </div>
-       
-                            <div class="row2">
-                                <div class="item1">
-                                    <h5>Population</h5>
-                                    <h5>289,481</h5>
-                                </div>
-                                <div class="item2">
-                                    <h5>Time zone</h5>
-                                    <p id="clock"></p>
-                                </div>
-                            </div>
+        <div class="container2">
+            <div class="fakt">
+                <div class="row1">
+                    <h3>Hystory of Kalmykia</h3>
+                    <p>The territory of Kalmykia is unique in that it has been the home in successive periods to many major world religions and ideologies. Some of the first people to invade this territory were Scythians, Sarmatians. Prehistoric paganism and shamanism gave way to Judaism amongst some of the Khazars (who included Muslims and Christians in equal or greater numbers as well). This was succeeded by Islam with the Alans while the Mongol hordes brought Tengriism, and the later Nogais were Muslims, before their replacement by the present-day Buddhist Oirats/Kalmyks. With the annexation of the territory by the Russian Empire, Christianity arrived with Slavic settlers, before all religion was suppressed after the Russian Revolution. Shamanism has in all probability remained a constant, often hidden, the substrate of folk practice, as it is today.</p>
+                </div>
+
+                <div class="row2">
+                    <div class="item1">
+                        <h5>Population</h5>
+                        <h5>289,481</h5>
+                    </div>
+                    <div class="item2">
+                        <h5>Time zone</h5>
+                        <p id="clock"></p>
+                    </div>
+                    <div class="item3">
+                        <h5>Weather</h5>
+                        <img src="" class="pictureWeather">
+                        <p class="weather"><span></span></p>
+                        <p class="weatherAlert"></p>
+                    </div>
+                    <div class="item4">
+                        <h5>Exchange</h5>
+                        <p class="exchange"><span></span></p>
                     </div>
                 </div>
-        </section>
-    
-<!--Section3 Gallery-->
-      <section id="photos">
-            <div class="container3">
-                <div class="row3">
-                    
+            </div>
+        </div>
+    </section>
+
+    <!--Section3 Gallery-->
+    <section id="photos">
+        <div class="container3">
+            <div class="row3">
+
                 <div class="column">
                     <div class="front"><img src="main-elista.jpg"></div>
-                    <div class="back"><h3>Golden abode of Shakyamuni Buddha</h3>
-                    <p>Golden Abode of Buddha Shakyamuni. The largest Buddhist khurul in Europe "The Golden Abode of Buddha Shakyamuni" was built in the city of Elista (Kalmykia) in 2005.</p></div>
+                    <div class="back">
+                        <h3>Golden abode of Shakyamuni Buddha</h3>
+                        <p>Golden Abode of Buddha Shakyamuni. The largest Buddhist khurul in Europe "The Golden Abode of Buddha Shakyamuni" was built in the city of Elista (Kalmykia) in 2005.</p>
+                    </div>
                 </div>
                 <div class="column">
                     <div class="front"><img src="hors.jpg"></div>
-                    <div class="back"><h3>Horse racing</h3>
-                    <p>Fascinating spectacle in Elista camel and horse race.<br>
-                        <a href="https://www.kalmykiatour.com/tag/skachki-v-eliste/" target="_blank">Program</a></p></div>
+                    <div class="back">
+                        <h3>Horse racing</h3>
+                        <p>Fascinating spectacle in Elista camel and horse race.<br>
+                            <a href="https://www.kalmykiatour.com/tag/skachki-v-eliste/" target="_blank">Program</a>
+                        </p>
+                    </div>
                 </div>
                 <div class="column">
                     <div class="front"><img src="pagoda-two.jfif"></div>
-                    <div class="back"><h3>Seven days pagoda</h3>
-                    <p>The Seven Days Pagoda is located on the central square of the city of Elista (Kalmykia, Europe). A seven-tiered pagoda with a prayer wheel and a fountain adorns the central square of the city of Elista</p></div>
+                    <div class="back">
+                        <h3>Seven days pagoda</h3>
+                        <p>The Seven Days Pagoda is located on the central square of the city of Elista (Kalmykia, Europe). A seven-tiered pagoda with a prayer wheel and a fountain adorns the central square of the city of Elista</p>
+                    </div>
                 </div>
                 <div class="column">
-                <div class="front"><img src="mortar.jpg"></div>
-                    <div class="back"><h3>Mortar and wish tree</h3>
-                    <p>According to legend, the tree was planted by the Buddhist monk Purdash-bagshi, who was the abbot of the most revered khurul in the Kalmyk steppes. People come here to pray, ask for protection, tie colored shreds to the branches and make a wish.</p></div>
+                    <div class="front"><img src="mortar.jpg"></div>
+                    <div class="back">
+                        <h3>Mortar and wish tree</h3>
+                        <p>According to legend, the tree was planted by the Buddhist monk Purdash-bagshi, who was the abbot of the most revered khurul in the Kalmyk steppes. People come here to pray, ask for protection, tie colored shreds to the branches and make a wish.</p>
+                    </div>
                 </div>
                 <div class="column">
                     <div class="front"><img src="vorota.jpg"></div>
-                    <div class="back"><h3>Golden Gate</h3>
-                    <p>Golden Gate "Altn Bosch" in the city of Elista Kalmykia. The Golden Gate is made in the traditions of Buddhist architecture. Twenty-eight paintings illustrate the pages of the history and modern life of Kalmykia. Height 15 meters.</p></div>
+                    <div class="back">
+                        <h3>Golden Gate</h3>
+                        <p>Golden Gate "Altn Bosch" in the city of Elista Kalmykia. The Golden Gate is made in the traditions of Buddhist architecture. Twenty-eight paintings illustrate the pages of the history and modern life of Kalmykia. Height 15 meters.</p>
+                    </div>
                 </div>
                 <div class="column">
                     <div class="front"><img src="stepes.jfif"></div>
-                    <div class="back"><h3>Steppe in spring</h3>
-                    <p>Wild Red Data Book tulips bloom in the Kalmyk steppe in spring. Guests from all over the country come to Elista to see the flowering steppe and participate in the ethnic holiday. </p></div>
+                    <div class="back">
+                        <h3>Steppe in spring</h3>
+                        <p>Wild Red Data Book tulips bloom in the Kalmyk steppe in spring. Guests from all over the country come to Elista to see the flowering steppe and participate in the ethnic holiday. </p>
+                    </div>
                 </div>
                 <div class="column">
-                <div class="front"><img src="central-square-elista.jpg"></div>
-                    <div class="back"><h3>Central square</h3>
-                    <p>The modest Arc de Triomphe serves as the southern gate of the square. The construction of this architectural ensemble was timed to coincide with the bicentenary of the victory over Napoleon Bonaparte and the entry of the Kalmyks into Paris</p></div>
+                    <div class="front"><img src="central-square-elista.jpg"></div>
+                    <div class="back">
+                        <h3>Central square</h3>
+                        <p>The modest Arc de Triomphe serves as the southern gate of the square. The construction of this architectural ensemble was timed to coincide with the bicentenary of the victory over Napoleon Bonaparte and the entry of the Kalmyks into Paris</p>
+                    </div>
                 </div>
                 <div class="column">
                     <div class="front"><img src="water-in-fire-two.jfif"></div>
-                    <div class="back"><h3>Burning spring</h3>
-                    <p>The source that burns. To be more precise, the water in the source burns. Water burns if you correctly bring a burning match.</p></div>
+                    <div class="back">
+                        <h3>Burning spring</h3>
+                        <p>The source that burns. To be more precise, the water in the source burns. Water burns if you correctly bring a burning match.</p>
+                    </div>
                 </div>
                 <div class="column">
                     <div class="front"><img src="thumbnail-one.jpg"></div>
-                    <div class="back"><h3>Local camels</h3>
-                    <p>The Kalmyk breed of camels, the Bactrian, is famous for its endurance and carrying capacity. They can carry weights up to 400 kilograms, are resistant to severe frosts, thanks to which they have been part of armies more than once.</p></div>
+                    <div class="back">
+                        <h3>Local camels</h3>
+                        <p>The Kalmyk breed of camels, the Bactrian, is famous for its endurance and carrying capacity. They can carry weights up to 400 kilograms, are resistant to severe frosts, thanks to which they have been part of armies more than once.</p>
+                    </div>
                 </div>
                 <div class="column">
-                <div class="front"><img src="desert.jpg"></div>
-                    <div class="back"><h3>Deserts of Kalmykia</h3>
-                    <p>The Black Earth region belongs to the semi-desert zone of the Caspian province and the desert Aral-Caspian province in approximately equal parts and covers an area of 3.5 million hectares, within the borders of Kalmykia, which is 47.3% of the territory of the republic.</p></div>
+                    <div class="front"><img src="desert.jpg"></div>
+                    <div class="back">
+                        <h3>Deserts of Kalmykia</h3>
+                        <p>The Black Earth region belongs to the semi-desert zone of the Caspian province and the desert Aral-Caspian province in approximately equal parts and covers an area of 3.5 million hectares, within the borders of Kalmykia, which is 47.3% of the territory of the republic.</p>
+                    </div>
                 </div>
                 <div class="column">
-                <div class="front"><img src="flawer-fest-two.jpg"></div>
-                    <div class="back"><h3>Tulip festival</h3>
-                    <p>The festival takes place annually in the second half of April, the exact dates are chosen according to weather conditions (tulips bloom at different times).</p></div>
+                    <div class="front"><img src="flawer-fest-two.jpg"></div>
+                    <div class="back">
+                        <h3>Tulip festival</h3>
+                        <p>The festival takes place annually in the second half of April, the exact dates are chosen according to weather conditions (tulips bloom at different times).</p>
+                    </div>
                 </div>
                 <div class="column">
                     <div class="front"><img src="flawer-lotos.jpg"></div>
-                    <div class="back"><h3>Lotuses in Kalmykia near the Caspian sea</h3>
-                    <p>On peals - in unique secret places where the Volga flows into the Caspian Sea, from mid-July to mid-August, lotuses (huge flowers and water lilies of amazingly delicate colors - pink, cream, white) bloom in the middle of the expanses of water.</p></div>
-                </div>       
-                    
-               </div>
+                    <div class="back">
+                        <h3>Lotuses in Kalmykia near the Caspian sea</h3>
+                        <p>On peals - in unique secret places where the Volga flows into the Caspian Sea, from mid-July to mid-August, lotuses (huge flowers and water lilies of amazingly delicate colors - pink, cream, white) bloom in the middle of the expanses of water.</p>
+                    </div>
+                </div>
+
             </div>
-        </section>
-    
+        </div>
+    </section>
+
     <footer id="footer">
         <div>
-            <p><a href="https://goo.gl/maps/9Syo7oVjJVkSZCUbA" target="_blank"><img src="location-two.png" class="local"> </a>46°34′N 45°19′E</p>
-            <p>© 2022 Kalmyk Republic.</p> 
-            <p><a target="_blank" href="https://en.wikipedia.org/wiki/Kalmykia">View more</a></p>      
+            <p><img src="location-two.png" class="local"><a href="https://goo.gl/maps/9Syo7oVjJVkSZCUbA" target="_blank"> 46°34′N 45°19′E</a></p>
+            <p>© 2022 Kalmyk Republic.</p>
+            <p><a target="_blank" href="https://en.wikipedia.org/wiki/Kalmykia">View more</a></p>
         </div>
     </footer>
- </body>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-        <script src="index.js"></script>
-
-</html>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+<script src="index.js"></script></html>
